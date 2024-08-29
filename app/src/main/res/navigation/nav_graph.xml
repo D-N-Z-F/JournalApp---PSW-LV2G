@@ -2,10 +2,30 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/loginRegisterFragment">
 
     <fragment
+        android:id="@+id/loginRegisterFragment"
+        android:name="com.daryl.journalapp.ui.loginRegister.LoginRegisterFragment"
+        android:label="LoginRegisterFragment" >
+        <action
+            android:id="@+id/actionLoginRegisterToHome"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/loginRegisterFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
         android:id="@+id/homeFragment"
-        android:name="journalapp.ui.fragments.HomeFragment"
-        android:label="HomeFragment" />
+        android:name="com.daryl.journalapp.ui.home.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/actionHomeToAddEdit"
+            app:destination="@id/addEditFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addEditFragment"
+        android:name="com.daryl.journalapp.ui.addEdit.AddEditFragment"
+        android:label="AddEditFragment" >
+        <argument android:name="id" app:argType="string" />
+    </fragment>
 </navigation>

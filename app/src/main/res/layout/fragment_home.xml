@@ -1,17 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.fragments.HomeFragment">
+        android:orientation="vertical"
+        tools:context=".ui.home.HomeFragment">
 
-        <!-- TODO: Update blank fragment layout -->
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/hello_blank_fragment" />
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center" >
+
+            <SearchView
+                android:id="@+id/svSearch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/xxs"
+                android:background="@drawable/rounded_search_view_bg"
+                android:padding="@dimen/xxxxs"
+                android:iconifiedByDefault="false"
+                android:queryHint="@string/sv_hint" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/mbDatePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/s"
+                android:paddingVertical="@dimen/s"
+                android:minWidth="@dimen/zero"
+                android:minHeight="@dimen/zero"
+                app:icon="@drawable/ic_date"
+                app:cornerRadius="@dimen/xxxs"
+                android:elevation="@dimen/xs"
+                android:backgroundTint="@color/material_dynamic_tertiary60"
+                app:iconGravity="textStart"
+                app:iconPadding="@dimen/zero"/>
+
+
+        </LinearLayout>
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tvEmpty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty"
+                android:textStyle="italic"
+                android:textColor="@color/red"
+                android:textAlignment="center"
+                app:drawableTopCompat="@drawable/ic_empty"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvJournals"
+                android:padding="@dimen/xxs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="@dimen/s"
+                android:layout_marginBottom="@dimen/s"
+                android:src="@drawable/ic_add"
+                app:backgroundTint="@color/material_dynamic_tertiary80"
+                android:contentDescription="@string/icon_desc"/>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
     </LinearLayout>
 </layout>

@@ -2,4 +2,31 @@
     <string name="app_name">journal-app</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sign_in_header">Sign In</string>
+    <string name="icon_desc">Icon</string>
+    <string name="username_insert">Insert Username</string>
+    <string name="email_insert">Insert Email</string>
+    <string name="password_insert">Insert Password</string>
+    <string name="password2_insert">Confirm Password</string>
+    <string name="login">LOGIN</string>
+    <string name="register">REGISTER</string>
+    <string name="success">%1$s success!</string>
+    <string name="empty">Nothing To Show.</string>
+    <string name="placeholder">Placeholder</string>
+    <string name="tags_hint">Tags (Separate with commas)</string>
+    <string name="tags">Tags: %1$s</string>
+    <string name="location">Location</string>
+    <string name="description">Description</string>
+    <string name="title">Title</string>
+    <string name="add">ADD</string>
+    <string name="submit">SUBMIT</string>
+    <string name="confirm_header">Are You Sure?</string>
+    <string name="confirm_delete">You want to delete this entry?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="sv_hint">Search Here…</string>
+    <string name="start_date_header">Select Start Date</string>
+    <string name="end_date_header">Select End Date</string>
+    <string name="final_date_header">Start &amp; End Dates Selected</string>
+    <string name="select">Select</string>
 </resources>

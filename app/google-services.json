@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "159441766112",
+    "project_id": "journal-app-psw-lv2g",
+    "storage_bucket": "journal-app-psw-lv2g.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159441766112:android:3db3b1336e198ac20ef285",
+        "android_client_info": {
+          "package_name": "com.daryl.journalapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1P36Fj7JPl1eS5d08VJvqMhVMUVyZ6jk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
